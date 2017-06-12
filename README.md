@@ -37,3 +37,21 @@ head text.txt 只看头几行
 tail text.txt 只看尾几行（默认10行） 
 tail -n 20 text.txt
 tail -f text.txt 持续监测文件后面内容 等到ctrl+c才会离开tail这个程序
+
+ 
+chmod -R 755 text.txt 只有创建文件的账户可修改，其他账户只能查看执行
+
+umask  指定新建一个文件或目录的默认权限
+
+chattr +-i/+-a
+lsattr         文件隐藏属性
+
+which command 查找PATH中设置的命令
+wchich -a command 将所有PATH命令中可找到的命令均列出，而不是只列出第一个被找到的命令
+
+whereis filename 查找文件 直接查询数据库，比find快（查硬盘）
+locate filename 查找所有包含filename字段的文件（ps：updatedb更新/etc/updatedb.conf，并更新/var/lib/mlocate,lcate读取其中内容）
+find / -name filename 查找／下名为filename的文件
+
+
+
