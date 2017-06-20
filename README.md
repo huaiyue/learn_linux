@@ -53,5 +53,7 @@ whereis filename 查找文件 直接查询数据库，比find快（查硬盘）
 locate filename 查找所有包含filename字段的文件（ps：updatedb更新/etc/updatedb.conf，并更新/var/lib/mlocate,lcate读取其中内容）
 find / -name filename 查找／下名为filename的文件
 
+dump 备份
+
 
 
